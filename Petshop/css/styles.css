@@ -1,0 +1,41 @@
+body  {
+    font-family: 'roboto', sans-serif ; 
+}
+#header {
+    color: #f3f3f3;
+    background-color: #222222;
+    font-size: 10px;
+    font-weight: 400;
+}
+#menu-principal {
+    background-color: #F0A83E;
+    font-weight: 400;
+    font-size: 13px;
+}
+.comederos{
+    color: #ffffff;
+    font-size: 16px;
+    background-color: #F0A83E;
+}
+h3 {
+    color: #3C2313;
+    font-size: 25px;
+}
+#suscribirme{
+    background-color:#F0A83E;
+    color: #ffffff;
+    font-size:20px;
+    font-weight: 700;
+}
+footer {
+    color:#ffffff;
+    background-color: black;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: center;
+}
+#contacto
+{
+    color: #ffffff;
+    background-color:#3C2313;
+}
