@@ -7,16 +7,15 @@
     <title>Petshop</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;1,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://fontawesome.com/">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <header> 
+<header> 
         <a href= "../index.html">Inicio</a>
-        <!--BARRA SUPERIOR-->
-        <section id="header">
+<!--BARRA SUPERIOR-->
+        <section class="header">
             <div>
             <p>Grandes ofertas en comederos</p></div>
             <ul type= "none">
@@ -24,74 +23,108 @@
             <li>ARG $</li>
             </ul>
         </section>
-        <!--BARRA DE MENU PRINCIPAL-->
-        <section id= "menu-principal">
+<!--BARRA DE MENU PRINCIPAL-->
+        <section class= "menu-principal">
                 <img src="./img/Logo.png" alt=""></a>
             <nav>
-                <ul type="none">
+                <ul class="menunavegacion" type="none">
                 <li><i class="fa-solid fa-paw"></i><a href= "">Categorías</a></li>
                 <li><i class="fa-solid fa-paw"></i><a href= "">Pets</a></li>
                 <li><i class="fa-solid fa-paw"></i><a href= "">Nosotros</a></li>
                 <li><i class="fa-solid fa-paw"></i><a href= "">Contactanos</a></li>
             </ul>
             </nav>
-        <!--SECCIÓN BANNER-->
         </section>
-    </header>
+</header>
     <main>
-        <section id= "banner">
-            <img src="./img/bowl-and-pet-daities-on-green-background 1.png" alt="">
-            <p>¡Es un placer tenerte aquí!</p>
-            <p>¡Comederos en descuentos!</p>
+<!--SECCIÓN BANNER-->
+        <div class= "banner">
+        <div>
+            <h1>¡Es un placer tenerte aquí!</h1>        
+            <h2>¡Comederos en descuentos!</h2>
             <nav>
-                <button class= comederos>COMEDEROS</button>
-            </nav>    
-        </section>
-        <!--SECCIÓN PRODUCTOS-->
-    <section id="productos">
-        <img src="./img/Huella.png" alt="">
-<h2>Productos destacados</h2>
-<p>Comederos-Accesorios-Comida</p>
-    <section id= articulos>
-        <article class= "item">
-        <img src= "./img/churrasquito.png" alt="">
-        <li>Juguete de churrasquito $150</li>
+            <button class= boton-comederos>COMEDEROS</button>
+            </nav>
+        </div>
+        </div>
+        <div class="contenedor-banner">
+        <img class="huella" src="./img/Huella.png" alt="huella">
+        <h2>Productos destacados</h2>
+        <nav>
+            <ul class="lista" type=none>
+                <li><a href= "">Comederos</a></li>
+                <li>-</li>
+                <li><a href= "">Accesorios</a></li>
+                <li>-</li>
+                <li><a href= "">Comida</a></li>
+            </ul>
+        </nav>
+        </div>
+<!--SECCIÓN PRODUCTOS-->
+        <div class="productos">
+        <article>
+        <img  src="./img/churrasquito.png" alt="">
+        <div>Juguete de churrasquito </div>
+        <span>$150</span>
         </article>
-        <article class= "item">
+        <article>
         <img src="./img/comedero.png" alt="">
-        <li>Comedero para perro $250</li>
+        <div>Comedero para perro </div>
+        <span>$250</span>
         </article>
-        <article class= "item">
+        <article>
         <img src="./img/Huesito.png" alt="">
-        <li>Juguete Huesito $650</li>
+        <div>Juguete Huesito </div>
+        <span>$650</span>    
         </article>
-    </section>
-<section id= contactanos>
-    <h3>Contáctanos</h3>
-    <p>Nombre y apellido</p>
-    <p>Ingresa tu correo electrónico</p>
-    <p>Telefóno</p>
-    <button>Resetear</button>
-    <button>Enviar</button>
+    </div>
+<!--SECCIÓN FORMULARIO-->
+<section class="formulario">
+    <span>Contáctanos<span>
+    <br>
+    <input class = "completar" type= "text" placeholder="Nombre y Apellido">
+    <input class = "completar" type= "text" placeholder="Ingresá tu correo electrónico">
+    <input class = "completar" type= "text" placeholder="Teléfono">
+    <button class="reset">Resetear</button>
+    <button class="enviar">Enviar</button>
 </section>
-<section id= "suscribirme">
+<section class= "suscribirme">
+    <div class="novedades">
+    <img src="/Petshop/img/enviar-correo 1.png" alt="">
     <p>Suscríbite para más novedades</p>
-    <p>Ingresa tu correo eletrónico</p>
-    <button>Suscribirme</button>
+    </div>
+    <div class="inscribirse">
+    <input class = "suscri2" type= "text" placeholder="Ingresa tu correo eletrónico">
+    <button class=susbutton>Suscribirme</button>
     </section>
-    <section id= "contacto">
-    <img src="./img/Logo (1).png" alt="">
-    <p>Localidad</p>
-    <img src="./img/Location.png" alt="">
-    <p>Teléfono</p>
-    <img src="./img/Phone.png" alt="">
-    <p>Correo Electrónico</p>
-    <img src="./img/Correo.png" alt="">
-    </section>
-        <!--Pie de página-->
+ <!--contacto-->
+    <section class="conteiner">
+        <div class="iconos-contacto">
+            <img src="./img/Icono (1).png" alt="localidad" width="58px">
+            <img src="./img/Iconotel.png" alt="telefono" width="58px">
+            <img src="./img/Iconocorreo.png" alt="mail" width="58px">
+        </div>
+        <div class="datos-iconos">
+        <div class="localidad"> 
+            <span>Localidad</span>
+            <p>Calle - Provincia</p>
+        </div>
+        <div class="telefono">
+            <span>Télefono</span>
+            <p>Número de télefono</p>
+        </div>
+        <div class="mail">
+        <span>Correo Electrónico</span>
+        <p>Dirección de correo</p>
+        </div>
+        </div>
+        <div class="logoinferior"><img src="./img/LogoFooter.png" alt="">
+        </div>
+        </section>
+        <!--Pie de página--> 
+    </main>
 <footer>
     <p>Todos los derechos reservados Front End</p>
 </footer>
-    </main>
 </body>
 </html>

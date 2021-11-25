@@ -1,47 +1,267 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
 *{
-    margin: 0;
-    padding: 0;
+  margin:0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+/*HEADER*/
+.header {
+  width: 100%;
+  height: 40px;
+  background-color: #222222;
+  color: #f3f3f3;
+  top: 0px;
+  font-family: "Roboto", Verdana,Tahoma, sans-serif sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-principal {
+  font-family: "Roboto",Verdana,Tahoma, sans-serif; 
+  font-style:normal;
+  font-weight: 400; 
+  font-size: 13px;
+  background-color: #f0a83e;
+  color: #ffffff;
+  width: 100%;
+  height: 62px;
+  position: absolute;
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
 }
 
-body  {
-    font-family: 'roboto', sans-serif ; 
+/*menu de navegacion*/
+.menunavegacion {
+  position: relative;
+  font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  color: #f3f3f3;
+  padding: 10px;
+  
 }
-#header {
-    color: #f3f3f3;
-    background-color: #222222;
-    font-size: 10px;
-    font-weight: 400;
+
+/*main*/
+
+main .banner {
+  background-image: url(/Petshop/img/bowl-and-pet-daities-on-green-background\ 1.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 500px;
+  display: flex;
+justify-content: end;
+align-items: center;
+  font-family: 'Roboto', Verdana, Tahoma, sans-serif sans-serif;
+  font-weight: 400;
+  margin-bottom: 10px;
+  
+  }
+.banner div{
+    display: flex;
+    flex-direction: column;
+   
+    text-align:center;
+    align-items: flex end;
+    gap: 10px;
+  }
+
+.boton-comederos {
+  color: #f3f3f3;
+  font-size: 16px;
+  background-color:#F0A83E;
+  padding: 15px 23px;
+  font-family: "Roboto", sans-serif;
+  text-align: center; 
 }
-#menu-principal {
-    background-color: #F0A83E;
-    font-weight: 400;
-    font-size: 13px;
+main .banner div h1{
+  background-color: #f3f3f3;
+  border-radius: 5px ;
+  margin: 20px;
+}
+/* end banner*/
+
+/*contenedor-productos*/
+main .contenedor-banner{
+  width: 100%;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+justify-content: start;
+margin: 10px;
+
+}
+.contenedor-banner h2 { 
+  font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+  font-size: 40px;
+  margin-top:10px;
+  margin-bottom:20px;
+  color:#3C2313;
+
+}
+.contenedor-banner nav ul {
+  display: flex;
+  gap:13px;
+}
+
+.productos {
+  width: 100%;
+  display:flex;
+  flex-direction:row;
+  justify-content: center;
+  margin: 10px;
+  gap:35px;}
+  
+.article {
+  display:flex;
+  flex-direction:row;
+  justify-content:space-evenly;
+  text-align:center;
+  padding:15px;
+}
+
+.article img {
+    height:268,9px;
+  width:265px;}
+
+  article span{
+  color:rgb(250, 193, 49);
+  display: flex;
+  justify-content: center;
+  }
+
+  article div {
+    display: flex;
+    justify-content:center;
+  }
+/*end prducutos*/
+
+/*formulario*/
+.formulario span{
+  font-size: 30px;
+  font-weight: bold;
+  font-family: 'Roboto',Verdana,Tahoma, sans-serif;
+  color:#3C2313
+}
+.formulario{
+  padding: 30px;;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+margin:15px;
+
+}
+.completar{
+width: 340px;
+height: 40px;
+background-color:#3C2313 ;
+display: flex;
+text-align: center;
+color:#f3f3f3;
+border-radius: 15px;
+margin:5px;
+}
+.reset{
+  width: 110px;
+  height: 34px;
+  background-color: #8A8787;
+  border-radius: 15px;
+  color: #f3f3f3;
+}
+
+.enviar{
+  width: 110px;
+  height: 34px;
+  background-color:#F0A83E;
+  border-radius: 15px;
+  color: #f3f3f3;
+}
+/*end formulario*/
+.suscribirme {
+  width: 100%;
+  height: 60px;
+  background-color: #F0A83E;
+  font-size:20px;
+  font-family: 'Roboto', Verdana, Tahoma, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  color: #FFFFFF;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+gap: 15px;
+}
+
+.suscri2{
+  width: 271px;
+  height: 40px;
+  background-color: #f3f3f3;
+  border-radius: 15px;
+  border: none;
+}
+
+.susbutton{
+background-color: #3C2313;
+border-radius: 15px;
+color:#f3f3f3;
+width: 110px;
+height: 34px;
+margin: 5px;
+}
+
+.novedades{
+  display: flex;
+  text-align: center;
+  align-items: center;
+  gap: 10px;
+  }
+
+
+  .conteiner{
+    display: flex;
+    background-color: #3C2313;
+    gap: 30px; 
+    color: #FFFFFF;
+    padding: 20px 0px 0px 20px;
+    font-family: "Roboto", sans-serif;
+
+
+}
+.datos-iconos {
+    color: #8A8787;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    padding: 10px 0 30px 0;
+}
+.datos-iconos span {
+  color:#f3f3f3;
+}
+
+.iconos-contacto {
+    display: flex;
+    flex-direction:column;
+    gap: 30px;
     
 }
-.comederos{
-    color: #ffffff;
-    font-size: 16px;
-    background-color: #F0A83E;
-}
-h3 {
-    color: #3C2313;
-    font-size: 25px;
-}
-#suscribirme{
-    background-color:#F0A83E;
-    color: #ffffff;
-    font-size:20px;
-    font-weight: 700;
-}
+
+
 footer {
-    color:#ffffff;
-    background-color: black;
-    font-size: 10px;
-    font-weight: 700;
-    text-align: center;
-}
-#contacto
-{
-    color: #ffffff;
-    background-color:#3C2313;
-}
+      background-color: #222222; 
+      color: #f3f3f3;
+      display: flex;
+      justify-content: center;
+    padding:5px;
+    }
+
+
